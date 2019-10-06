@@ -230,6 +230,10 @@ sum(is.na(nycDests$name))
 manny <- filter(Batting, playerID == "ramirma02")
 nrow(manny)
 
+setwd("C:\\github\\R_to_Python\\R\\m_04")
+write.csv(Master,file="Master.csv", row.names = FALSE)
+
+
 ## ------------------------------------------------------------------------
 manny %>% summarize(
   span = paste(min(yearID), max(yearID), sep = "-"), 
