@@ -11,7 +11,8 @@ library(mdsr)
 library(nycflights13)
 SF <- flights %>%
   filter(dest == "SFO", !is.na(arr_delay))
-
+setwd("C:\\github\\R_to_Python\\R\\m_07")
+write.csv(flights,file="flights.csv", row.names = FALSE)
 ## ------------------------------------------------------------------------
 set.seed(101)
 Sample25 <- SF %>%
